@@ -84,7 +84,6 @@ export default ({
   actions: {
     async loadUserItems(context,{listId}){
       const items = await ListService.query(listId);
-      console.log('b2',items)
       context.commit({type:'setUserItems',items})
     },
     // async setCurrItem(context,{itemId}){

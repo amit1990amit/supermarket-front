@@ -81,7 +81,6 @@ export default {
     methods: {
         async save(){
             let currItem = this.currItem;
-            console.log('tttttttt',currItem)
             await this.$store.dispatch({type:'editItem',currItem});
             this.$router.push('/');
         },

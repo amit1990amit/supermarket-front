@@ -122,7 +122,6 @@ export default ({
       },
   
       async editItem(context, {currItem}){
-        console.log('b2',currItem)
         const item = await ItemService.editItem(currItem)
         context.commit({type:'editItem',item})
         return item
@@ -134,7 +133,6 @@ export default ({
       }, 
   
       async addItem(context,{currItem}){
-        console.log('b2',currItem)
         const item = await ItemService.addItem(currItem)
         context.commit({type:'addItem',item:item})
         return item
