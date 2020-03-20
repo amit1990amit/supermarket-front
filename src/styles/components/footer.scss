@@ -1,0 +1,54 @@
+.footer {
+    height: 200px;
+    background-color: #333;
+    color: #888;
+    font-size: 1rem;
+    display: flex;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    justify-content: space-around;
+    align-items: center;
+    p {
+        margin: 0;
+        width: 340px;
+    }
+    .social-icons {
+        display: flex;
+        width: 340px;
+        justify-content: space-around;
+        font-size: 2rem;
+        cursor: pointer;
+        outline: none;
+        .fa-facebook-square {
+            color: #888;
+            transition: .2s all;
+            &:hover {
+                color: #4267B2;
+            }
+        }
+        .fa-google-plus-square {
+            color: #888;
+            transition: .2s all;
+            &:hover {
+                color: #d34836;
+            }
+        }
+        .fa-whatsapp {
+            color: #888;
+            transition: .2s all;
+            &:hover {
+                color: #25d366;
+            }
+        }
+    }
+}
+
+.footer img {
+    height: 80px;
+}
+
+@media(max-width: 800px) {
+    .footer {
+        flex-direction: column;
+    }
+}
